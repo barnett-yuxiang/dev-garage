@@ -40,7 +40,4 @@ if [ -n "$PID" ]; then
             fi
         fi
     fi
-
-    echo -e "\n===== To kill this process =====\n"
-    echo "Run: kill $PID"
 fi
