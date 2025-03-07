@@ -1,8 +1,8 @@
-# 🚀 Dev Garage
+## Dev Garage
 
 A personally maintained script repository that collects small tools for daily development, operations, and automation for convenient use anytime.
 
-## 📌 Usage
+### Usage
 ```bash
 # Grant execution permission
 chmod +x script.sh
