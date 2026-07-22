@@ -13,3 +13,4 @@ Small shell tools for daily development and ops. All scripts use the `dg_` prefi
 | `dg_reverse_lookup.sh <ip>` | Reverse DNS lookup |
 | `dg_whois_lookup.sh <domain>` | WHOIS query |
 | `dg_find_port.sh <port>` | Find which process occupies a port |
+| `dg_codeup_user.sh` | Set repo-level git identity for Codeup |
