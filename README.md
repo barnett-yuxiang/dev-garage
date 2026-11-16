@@ -14,3 +14,4 @@ Small shell tools for daily development and ops. All scripts use the `dg_` prefi
 | `dg_whois_lookup.sh <domain>` | WHOIS query |
 | `dg_find_port.sh <port>` | Find which process occupies a port |
 | `dg_set_codeup_identity.sh` | Set repo-level git identity for Codeup |
+| `dg_sync_pwa.sh [repo ...]` | Sync PWA repos via `git fetch -p` + `git rebase` |
