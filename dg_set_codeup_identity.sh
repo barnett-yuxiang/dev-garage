@@ -1,7 +1,7 @@
 #!/bin/bash
-# dg_codeup_user.sh
+# dg_set_codeup_identity.sh
 # Set repo-level git identity for Codeup (git config --local).
-# Usage: ./dg_codeup_user.sh
+# Usage: run inside a Codeup repo, e.g. /path/to/dg_set_codeup_identity.sh
 
 if ! git rev-parse --is-inside-work-tree >/dev/null 2>&1; then
   echo "Error: not inside a git repository."
