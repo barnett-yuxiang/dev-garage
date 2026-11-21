@@ -1,10 +1,18 @@
 #!/bin/bash
-# 查看、检查或升级当前用户的全局 skills（~/.agents/skills），等同 npx skills <cmd> -g。
+# List, check, or update the current user's global skills (~/.agents/skills), i.e. npx skills <cmd> -g.
 # Usage: ./dg_manage_skills.sh [list | check | update [skill ...]]
-#   不带参数等同于 list；update 不带 skill 时升级全部有更新的。
+#
+#   ./dg_manage_skills.sh                   npx skills list -g              List installed global skills
+#   ./dg_manage_skills.sh check             npx skills check -g             Check which skills have updates
+#   ./dg_manage_skills.sh update lark-doc   npx skills update lark-doc -g   Update lark-doc only
+#   ./dg_manage_skills.sh update            npx skills update -g            Update all global skills with updates
+#
+# Not covered by this script, run directly in the terminal:
+#   open ~/.agents/skills                     Open the skills directory in Finder (macOS)
+#   less ~/.agents/skills/lark-doc/SKILL.md   Read a skill's description
 
 if ! command -v npx >/dev/null 2>&1; then
-    echo "需要 npx，请先安装 Node.js。" >&2
+    echo "Error: npx not found. Install Node.js first." >&2
     exit 1
 fi
 
