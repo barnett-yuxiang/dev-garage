@@ -19,6 +19,7 @@
 | `dg_find_port.sh <port>` | 查看端口被哪个进程占用 |
 | `dg_set_codeup_identity.sh` | 在 Codeup 仓库内运行，设置 repo 级别的 git user/email，覆盖全局 `~/.gitconfig` 身份 |
 | `dg_sync_pwa.sh [repo ...]` | 对 `~/repo_projects/codeup/pwa` 下各仓库执行 `git fetch -p` + `git rebase`，不带参数时同步全部 |
+| `dg_manage_skills.sh [cmd] [skill ...]` | 管理全局 skills，等同 `npx skills <cmd> -g`；`cmd` 为 `list`（默认）、`check` 或 `update` |
 
 ### 贡献
 
